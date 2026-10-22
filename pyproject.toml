@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "temporal-network-witness"
+version = "0.1.0a1"
+description = "FR: Trouver et rejouer un cycle de contraintes temporelles impossible | EN: Find and replay an impossible temporal-constraint cycle | ES: Encontrar y reproducir un ciclo imposible de restricciones temporales"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+temporal-network-witness = "temporal_network_witness.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["temporal_network_witness*"]

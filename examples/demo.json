@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    "start",
+    "observe",
+    "downlink"
+  ],
+  "constraints": [
+    {
+      "from": "start",
+      "to": "observe",
+      "max": 5
+    },
+    {
+      "from": "observe",
+      "to": "downlink",
+      "max": 3
+    },
+    {
+      "from": "downlink",
+      "to": "start",
+      "max": -10
+    }
+  ]
+}

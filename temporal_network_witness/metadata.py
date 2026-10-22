@@ -1,0 +1,1 @@
+DESCRIPTION = {'fr': 'Trouver et rejouer un cycle de contraintes temporelles impossible', 'en': 'Find and replay an impossible temporal-constraint cycle', 'es': 'Encontrar y reproducir un ciclo imposible de restricciones temporales'}
