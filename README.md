@@ -73,3 +73,34 @@ Pruebas de dominio, casos límite e interfaz FR/EN/ES. CI prueba Python 3.11/3.1
 
 - https://github.com/plexil-group/plexil
 - https://doi.org/10.1016/0004-3702(91)90006-6
+
+## Exemple d’entrée / Input example / Ejemplo de entrada
+
+```json
+{
+  "nodes": [
+    "start",
+    "observe",
+    "downlink"
+  ],
+  "constraints": [
+    {
+      "from": "start",
+      "to": "observe",
+      "max": 5
+    },
+    {
+      "from": "observe",
+      "to": "downlink",
+      "max": 3
+    },
+    {
+      "from": "downlink",
+      "to": "start",
+      "max": -10
+    }
+  ]
+}
+```
+
+FR : champs numériques dans les unités de la section méthode ; clés JSON techniques conservées. EN: numeric fields use the method section units; technical JSON keys are preserved. ES: los campos numéricos usan las unidades del método; se conservan las claves JSON técnicas.
